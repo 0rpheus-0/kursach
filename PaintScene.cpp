@@ -20,7 +20,7 @@ void PaintScene::paintEvent(QPaintEvent*) {
     setAutoFillBackground(true);
     setPalette(Pal);
     painter.setRenderHint(QPainter::Antialiasing, true);
-    painter.setPen(QPen(Qt::white, 20, Qt::SolidLine));
+    painter.setPen(QPen(Qt::white, 12, Qt::SolidLine));
     for (int i = 0; i < vv.size(); i++)
         if (i > 0)
             painter.drawEllipse(vv[i - 1], 15, 15);
